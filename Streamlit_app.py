@@ -26,7 +26,7 @@ my_data_row= my_cur.fetchone()
 my_data_ro= my_sur.fetchall()
 streamlit.text(" hello from snowflake: ")
 streamlit.text(my_data_row)
-
+fruit_choice=streamlit.text_input("what food would you like information about?",'jackfruit')
 
 streamlit.dataframe(my_data_ro)
 
