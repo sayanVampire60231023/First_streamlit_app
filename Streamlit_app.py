@@ -58,7 +58,7 @@ def add_my_fruit(New_fruit):
         my_sur.execute("insert into fruit_load_list values ('from streamlit')")
         return "thanks for adding "+new_fruit
 add_new=streamlit.text_input("what food would you like to add?")
-if streamlit.button('add a fruit ')
+if streamlit.button('add a fruit '):
     my_cnx=snowflake.connector.connect(**streamlit.secrets["snowflake"])
     streamlit.text(add_my_fruit(add_new))
 
