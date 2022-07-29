@@ -56,7 +56,7 @@ if streamlit.button("get fruit load list"):
 #streamlit.text(my_data_row)
 def add_my_fruit(new_fruit):
     with my_cnx.cursor() as my_sur:
-        my_sur.execute("insert into fruit_load_list values ('" + ???? + "')")
+        my_sur.execute("insert into fruit_load_list values ('" + new_fruit + "')")
         return "thanks for adding "+new_fruit
 add_new=streamlit.text_input("what food would you like to add?")
 if streamlit.button('add a fruit '):
