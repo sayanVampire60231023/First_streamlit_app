@@ -26,6 +26,7 @@ my_data_row= my_cur.fetchone()
 my_data_ro= my_sur.fetchall()
 streamlit.text(" hello from snowflake: ")
 streamlit.text(my_data_row)
-streamlit.multiselect("pick fruit:" ,list(my_data_ro.index),['jackfruit'])
+
+
 streamlit.dataframe(my_data_ro)
 
